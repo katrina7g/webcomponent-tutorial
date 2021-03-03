@@ -5,7 +5,10 @@
         <title>WebComponent Tutorial</title>        
     </head>
     <body>
-        <star-wars-characters></star-wars-characters>
+        <star-wars-characters title="Star Wars List of Characters">
+            <h2 slot="header">This is list</h2>
+            <button slot="footer">Click me!</button>
+        </star-wars-characters>
         <script src="dist/bundle.js"></script>
     </body>
 </html>
