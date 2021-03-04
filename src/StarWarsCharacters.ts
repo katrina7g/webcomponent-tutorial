@@ -17,7 +17,7 @@ export class StarWarsCharacters extends FASTElement {
     }
 
     private async loadData() {
-        const response = await fetch("https://swapi.dev/api/people");
+        const response = await fetch("https://swapi.dev/api/people/");
         const parsedResponse = await response.json();
         this.characters = parsedResponse.results;
     }
