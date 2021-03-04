@@ -1,5 +1,9 @@
-import { StarWarsCharacters } from "./StarWarsCharacters";
 import { html, repeat, when } from "@microsoft/fast-element";
+import { StarWarsCharacter } from "./components/StarWarsCharacter";
+import { StarWarsCharacters } from "./StarWarsCharacters";
+
+StarWarsCharacter;
+
 export const StarWarsCharactersTemplate = html<StarWarsCharacters>`
     <h1>${x => x.title}</h1>
     <slot name="header"></slot>
